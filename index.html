@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CheckPoint3</title>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="box" id='box1'>
+        <h1>Frieza's Power Level Generator</h1>
+      </div>
+      <div class="box" id='box2'>
+        <h1>Power: <span id='power'></span></h1>
+        <h1>Energy: <span id='energy'></span></h1>
+        <canvas id="canvas"></canvas>
+        <img src="./image/Frieza.png" id='frieza' alt="">
+      </div>
+      <div class="box" id='box3'>
+        <h1>Power Increase By:</h1>
+        <button type="button" id='basic' name="basic">Small -
+          <span id='basicCost'>5</span>
+        </button>
+        <button type="button" id='upgrade' name="upgrade">Medium -
+          <span id='upgradeCost'>10</span>
+        </button>
+        <button type="button" id='exceptional' name="exceptional">Large -
+          <span id='exceptionalCost'>25</span>
+        </button>
+        <button type="button" id='god' name="god">Epic -
+          <span id='godCost'>100</span>
+        </button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>

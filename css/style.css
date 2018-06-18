@@ -1,0 +1,78 @@
+body {
+  background-image: url("../image/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+button {
+  display: block;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 35%;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: teal;
+  font-weight: bolder;
+  color: white;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "box1"
+  "box2"
+  "box2"
+  "box3";
+  grid-gap: 3px;
+}
+.box {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(120,120,120,.5);
+}
+.stats {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+}
+#canvas {
+
+  margin-left: 20%;
+  width: 800px;
+  height: 400px;
+
+}
+#box1 {
+  grid-area: box1;
+  text-align: center;
+}
+#box2 {
+  background-image: url("../image/battlebg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  color: red;
+  grid-area: box2;
+}
+#box3 {
+  display: inline-flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  grid-area: box3;
+}
+#box3 h1 {
+  width: 100%;
+}
+
+#frieza {
+  width: 150px;
+  float: right;
+  margin-top: 150px;
+}
